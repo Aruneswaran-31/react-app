@@ -1,11 +1,13 @@
 import React, { useState } from 'react'
 import NewsList from './NewsList';
+import ResponsiveAppBar from '../navbar/ResponsiveAppBar';
 
 function News() {
   const [category,setCategory] =useState("");
   const categories = ['general','technology','sports','health','science','business'];
   return (
     <div>
+      <ResponsiveAppBar/>
       <h1>News-App</h1>
       <nav>
         {categories.map( (cat) => (

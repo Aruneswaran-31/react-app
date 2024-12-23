@@ -1,4 +1,5 @@
 import React, { useState } from 'react'
+import ResponsiveAppBar from '../navbar/ResponsiveAppBar';
 
 function Todo() {
   const[task,setTask]=useState("");
@@ -18,7 +19,9 @@ function Todo() {
   }
   const filterTask = tasks.filter((t) =>completed || !t.completed)
     return (
+      
     <div>
+      <ResponsiveAppBar/>
         <h1>To-Do-Application</h1>
         <form onSubmit={handleSubmit}>
             <input type='text'placeholder="Today's Task?" 
@@ -38,6 +41,7 @@ function Todo() {
             )
             }
         </ul>
+        
     </div>
   )
 }

@@ -1,10 +1,11 @@
 import React from 'react'
-import News from '../pages/News'
+import ResponsiveAppBar from '../navbar/ResponsiveAppBar'
+
 
 function Home() {
   return (
     <div>
-        <News/>
+        <ResponsiveAppBar/>
     </div>
    
   )
